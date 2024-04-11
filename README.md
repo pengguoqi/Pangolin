@@ -11,3 +11,10 @@ mkdir build
 cd build 
 make -j6
 ```
+
+## 到处头文件
+
+```
+bash zip_include.sh
+```
+
