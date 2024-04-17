@@ -321,4 +321,4 @@ TypedImage ReadFramebuffer(const Viewport& v, const std::string& pixel_format = 
 }
 
 // Include implementation
-#include <pangolin/gl/gl.hpp>
+#include <pangolin/gl/gl.hpp>    

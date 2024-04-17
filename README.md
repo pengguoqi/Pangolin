@@ -12,9 +12,10 @@ cd build
 make -j6
 ```
 
-## 到处头文件
+## 导出头文件
 
 ```
 bash zip_include.sh
 ```
 
+- 使用时需要将gl.h中屏蔽gl.hpp的引用，glsl.h类似操作
