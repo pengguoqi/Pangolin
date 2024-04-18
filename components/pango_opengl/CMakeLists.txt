@@ -21,6 +21,8 @@ PRIVATE
     ${CMAKE_CURRENT_BINARY_DIR}/fonts.cpp
     ${CMAKE_CURRENT_BINARY_DIR}/shaders.cpp
 )
+include_directories(${CMAKE_CURRENT_LIST_DIR}/../pango_display/include
+                    ${CMAKE_CURRENT_LIST_DIR}/../pango_windowing/include)
 
 find_package(Eigen3 REQUIRED NO_MODULE)
 message(STATUS "Found Eigen: '${EIGEN3_INCLUDE_DIRS}'")

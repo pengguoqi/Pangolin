@@ -36,9 +36,7 @@
 #include <pangolin/gl/gldraw.h>
 #include <pangolin/var/varextra.h>
 #include <pangolin/utils/file_utils.h>
-
-#include "pangolin_gl.h"
-
+#include <pangolin/display/pangolin_gl.h>
 
 using namespace std;
 

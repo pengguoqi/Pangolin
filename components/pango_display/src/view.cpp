@@ -32,8 +32,7 @@
 #include <pangolin/gl/viewport.h>
 #include <pangolin/gl/opengl_render_state.h>
 #include <pangolin/platform.h>
-
-#include "pangolin_gl.h"
+#include <pangolin/display/pangolin_gl.h>
 
 namespace pangolin
 {

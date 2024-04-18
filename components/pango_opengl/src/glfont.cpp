@@ -33,6 +33,7 @@
 #include <pangolin/image/image_io.h>
 #include <pangolin/utils/type_convert.h>
 #include <pangolin/utils/file_utils.h>
+#include <pangolin/display/pangolin_gl.h>
 
 #if !defined(HAVE_GLES) || defined(HAVE_GLES_2)
 #include <pangolin/gl/glsl.h>
@@ -51,6 +52,9 @@
 #endif
 
 #define MAX_TEXT_LENGTH 500
+
+// Embedded fonts:
+extern const unsigned char AnonymousPro_ttf[];
 
 namespace pangolin
 {
@@ -137,6 +141,17 @@ std::string format(const char * format, ...)
   va_end(args);
   return s;
 }
+
+extern __thread PangolinGl* context;
+
+GlFont& GlFont::I()
+{
+    if (!context->font) {
+        context->font.reset(new GlFont(AnonymousPro_ttf, 15));
+    }
+    return *context->font.get();
+}
+
 
 GlFont::GlFont(const unsigned char* truetype_data, float pixel_height, int tex_w, int tex_h)
 {

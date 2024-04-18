@@ -25,7 +25,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include "pangolin_gl.h"
+#include <pangolin/display/pangolin_gl.h>
 #include <pangolin/display/display.h>
 #include <pangolin/console/ConsoleView.h>
 

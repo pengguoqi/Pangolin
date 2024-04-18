@@ -28,7 +28,7 @@
 #include <pangolin/display/process.h>
 #include <pangolin/console/ConsoleView.h>
 #include <pangolin/handler/handler.h>
-#include "pangolin_gl.h"
+#include <pangolin/display/pangolin_gl.h>
 
 namespace pangolin
 {

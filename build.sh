@@ -10,16 +10,6 @@ else
 fi
 cd ./build
 cmake ..
-make
+make -j4
 cd ./../
-# cd ./lib || exit
-# for file in *.so; do
-#     new_name="${file}.1"
-#     if [[ ! -e "$new_name" ]]; then
-#         mv "$file" "$new_name"
-#         echo "Renamed $file to $new_name"
-#     else
-#         echo "Error: $new_name already exists"
-#     fi
-# done
 

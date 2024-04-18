@@ -28,8 +28,7 @@
 #include <pangolin/display/view.h>
 #include <pangolin/handler/handler.h>
 #include <pangolin/display/display.h>
-
-#include "pangolin_gl.h"
+#include <pangolin/display/pangolin_gl.h>
 
 namespace pangolin
 {

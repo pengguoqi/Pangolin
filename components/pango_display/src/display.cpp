@@ -47,8 +47,7 @@
 #include <pangolin/utils/type_convert.h>
 #include <pangolin/image/image_io.h>
 #include <pangolin/var/var.h>
-
-#include "pangolin_gl.h"
+#include <pangolin/display/pangolin_gl.h>
 
 extern const unsigned char AnonymousPro_ttf[];
 
