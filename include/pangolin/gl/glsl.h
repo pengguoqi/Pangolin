@@ -229,4 +229,4 @@ protected:
 }
 
 // Implementation
-#include <pangolin/gl/glsl.hpp>
+#include <pangolin/gl/glsl.hpp>   
